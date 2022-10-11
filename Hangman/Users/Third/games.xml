@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ArrayOfGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Game IDGame="0">
+    <User UserName="Third" Avatar="/Hangman;component/Resources/Avatars/dog.png" />
+    <Category>Countries</Category>
+    <OriginalWord>Bulgaria</OriginalWord>
+    <CurrentWord>_ _ _ _ _ _ _ _ </CurrentWord>
+    <LettersUsed />
+    <Lvl>1</Lvl>
+    <LivesLeft>6</LivesLeft>
+    <TimeLeft>60</TimeLeft>
+  </Game>
+</ArrayOfGame>

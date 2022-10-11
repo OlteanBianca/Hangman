@@ -1,0 +1,28 @@
+﻿<Window x:Class="Hangman.Views.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="HelpWindow" Height="450" Width="800">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Hangman;component/Resources/Wallpaper/about.jpg"/>
+        </Grid.Background>
+
+        <Label Content="Oltean Bianca" HorizontalAlignment="Left" Height="53" Margin="32,98,0,0" 
+               VerticalAlignment="Top" Width="287" FontSize="36" Foreground="#FF151313" FontWeight="Bold"/>
+
+        <Label Content="10LF303" HorizontalAlignment="Left" Height="57" Margin="32,178,0,0" VerticalAlignment="Top" 
+               Width="173" FontSize="36" Foreground="#FF0C0B0B" FontWeight="Bold"/>
+
+        <Label Content="Informatica aplicata" HorizontalAlignment="Left" Height="61" Margin="32,258,0,0" 
+               VerticalAlignment="Top" Width="366" FontSize="36" Foreground="#FF0C0B0B" FontWeight="Bold"/>
+
+        <Image HorizontalAlignment="Left" Height="80" Margin="33,16,0,0" VerticalAlignment="Top" Width="114"
+               Source="/Hangman;component/Resources/Icons/user.png" RenderTransformOrigin="0.5,0.5"/>
+
+    </Grid>
+</Window>

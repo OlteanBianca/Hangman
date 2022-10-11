@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfStatistics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Statistics Category="Cities">
+    <Won>6</Won>
+    <Lost>4</Lost>
+  </Statistics>
+  <Statistics Category="Countries">
+    <Won>11</Won>
+    <Lost>6</Lost>
+  </Statistics>
+  <Statistics Category="Mountains">
+    <Won>6</Won>
+    <Lost>4</Lost>
+  </Statistics>
+  <Statistics Category="Singers">
+    <Won>3</Won>
+    <Lost>2</Lost>
+  </Statistics>
+  <Statistics Category="Songs">
+    <Won>6</Won>
+    <Lost>5</Lost>
+  </Statistics>
+  <Statistics Category="All categories">
+    <Won>31</Won>
+    <Lost>25</Lost>
+  </Statistics>
+</ArrayOfStatistics>

@@ -1,0 +1,65 @@
+﻿<Window x:Class="Hangman.Views.NewUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ctx="clr-namespace:Hangman.ViewModels"
+        xmlns:ctx2="clr-namespace:Hangman.Commands"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        x:Name="newUserWindow"
+        Title="NewUserWindow" Height="528.075" Width="746.056">
+
+    <Window.DataContext>
+        <ctx:NewUserVM/>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <ctx2:Converter x:Key="multiConverter"></ctx2:Converter>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Hangman;component/Resources/Wallpaper/newUser.jpg"/>
+        </Grid.Background>
+       
+        <Label Content="Add &#xD;&#xA;new user:"  HorizontalAlignment="Left" Height="115" Margin="61,32,0,0" VerticalAlignment="Top" Width="206" FontSize="36" FontWeight="Bold"/>
+        <Label Content="Username:" HorizontalAlignment="Left" Height="52" Margin="62,200,0,0" VerticalAlignment="Top" Width="188" FontSize="36" FontWeight="Bold"/>
+        <Label Content="Avatar:" HorizontalAlignment="Left" Height="52" Margin="463,32,0,0" VerticalAlignment="Top" Width="173" FontSize="36" FontWeight="Bold"/>
+
+        <Image Name="avatars" Source="{Binding NewUser.Avatar, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" 
+               Height="213" Margin="439,103,0,0" VerticalAlignment="Top" Width="229"/>
+
+        <TextBox x:Name="username" Text="{Binding NewUser.UserName, UpdateSourceTrigger=PropertyChanged}" Height="54"
+                 HorizontalAlignment="Left" Margin="61,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" 
+                 FontSize="24" RenderTransformOrigin="0.325,0.537" Background="#7FDFD7D7" BorderBrush="#FF0E0E0F"/>
+
+        <Button x:Name="Previous" Command="{Binding PreviousAvatarCommand}" CommandParameter="{Binding NewUser}" HorizontalAlignment="Left"
+                Height="59" Margin="463,321,0,0" VerticalAlignment="Top" Width="57" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Hangman;component/Resources/Icons/previous.png"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Next" Command="{Binding NextAvatarCommand}" CommandParameter="{Binding NewUser}" HorizontalAlignment="Left" 
+                Height="59" Margin="562,321,0,0" VerticalAlignment="Top" Width="57" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Hangman;component/Resources/Icons/next.png"/>
+            </Button.Background>
+        </Button>
+
+        <Button Content="Cancel" Click="CancelClicked" HorizontalAlignment="Left" Height="42" Margin="177,410,0,0" VerticalAlignment="Top" 
+                Width="156" FontSize="24" FontWeight="Bold" Background="#7FDFD7D7" BorderBrush="#FF0E0E0F"/>
+
+        <Button Content="Add" Command="{Binding AddUserCommand}"  HorizontalAlignment="Left" Height="42" VerticalAlignment="Top" 
+                Width="156" FontSize="24" FontWeight="Bold" Background="#7FDFD7D7" BorderBrush="#FF0E0E0F" Margin="381,410,0,0">
+            <Button.CommandParameter>
+                <MultiBinding Converter="{StaticResource multiConverter}">
+                    <Binding Path="NewUser"/>
+                    <Binding ElementName="newUserWindow"/>
+                </MultiBinding>
+            </Button.CommandParameter>
+        </Button>
+
+    </Grid>
+</Window>

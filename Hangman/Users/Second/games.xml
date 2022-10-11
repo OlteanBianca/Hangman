@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<ArrayOfGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Game IDGame="0">
+    <User UserName="Second" Avatar="/Hangman;component/Resources/Avatars/cow.png" />
+    <Category>All categories</Category>
+    <OriginalWord>Italy</OriginalWord>
+    <CurrentWord>_ _ a _ _ </CurrentWord>
+    <LettersUsed>aun</LettersUsed>
+    <Lvl>1</Lvl>
+    <LivesLeft>4</LivesLeft>
+    <TimeLeft>57</TimeLeft>
+  </Game>
+  <Game IDGame="3">
+    <User UserName="Second" Avatar="/Hangman;component/Resources/Avatars/cow.png" />
+    <Category>All categories</Category>
+    <OriginalWord>I See Fire</OriginalWord>
+    <CurrentWord>I _ _ _ _ i r _ </CurrentWord>
+    <LettersUsed>mnoauri</LettersUsed>
+    <Lvl>1</Lvl>
+    <LivesLeft>1</LivesLeft>
+    <TimeLeft>44</TimeLeft>
+  </Game>
+  <Game IDGame="7">
+    <User UserName="Second" Avatar="/Hangman;component/Resources/Avatars/beaver.png" />
+    <Category>Mountains</Category>
+    <OriginalWord>Ural</OriginalWord>
+    <CurrentWord>_ _ _ _ </CurrentWord>
+    <LettersUsed />
+    <Lvl>2</Lvl>
+    <LivesLeft>6</LivesLeft>
+    <TimeLeft>60</TimeLeft>
+  </Game>
+  <Game IDGame="5">
+    <User UserName="Second" Avatar="/Hangman;component/Resources/Avatars/beaver.png" />
+    <Category>All categories</Category>
+    <OriginalWord>Jennifer Lopez</OriginalWord>
+    <CurrentWord>_ _ _ _ _ _ _ _ _ _ _ _ _ </CurrentWord>
+    <LettersUsed />
+    <Lvl>2</Lvl>
+    <LivesLeft>6</LivesLeft>
+    <TimeLeft>60</TimeLeft>
+  </Game>
+</ArrayOfGame>
